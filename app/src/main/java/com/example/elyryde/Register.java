@@ -12,7 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -36,23 +39,25 @@ public class Register extends AppCompatActivity {
         email = (EditText) findViewById(R.id.emailid_register);
         password = (EditText) findViewById(R.id.password_register);
         name = (EditText) findViewById(R.id.name_register);
+        progressDialog = new ProgressDialog(this);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email1 = email.getText().toString().trim();
                 String password1 = password.getText().toString().trim();
+                String username1 = username.getText().toString().trim();
 
                 if(!Patterns.EMAIL_ADDRESS.matcher(email1).matches()){
-                    email1.setError("Invalid Email");
-                    email1.setFocusable(true);
+                    email.setError("Invalid Email");
+                    email.setFocusable(true);
                 }
                 else if(password.length()<6){
                     password.setError("Password length must be greater than 6");
                     password.setFocusable(true);
                 }
                 else{
-                    registerUser(email, password1);
+                    registerUser(email1, password1);
                 }
             }
         });
@@ -79,8 +84,7 @@ public class Register extends AppCompatActivity {
                             hashMap.put("email", email);
                             hashMap.put("uid", uid);
                             hashMap.put("name", email);
-                            hashMap.put("phone", email);
-                            hashMap.put("image", email);
+                            hashMap.put("username", email);
                             //getting database
 
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -90,7 +94,7 @@ public class Register extends AppCompatActivity {
                             reference.child(uid).setValue(hashMap);
 
                             Toast.makeText(Register.this, "Registering"+ user.getEmail(), Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(Register.this, feed.class));
+                            //startActivity(new Intent(Register.this, feed.class));
                             finish();
 
                         } else {

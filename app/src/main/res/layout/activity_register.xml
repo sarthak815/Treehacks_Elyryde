@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:layout_gravity="start||center"
+                android:layout_gravity="center_vertical"
                 android:text="ElyRyde"
                 android:textColor="#FFFF"
                 android:textStyle="bold"
@@ -39,8 +39,8 @@
             <ImageView
                 android:layout_width="155dp"
                 android:layout_height="181dp"
-                android:layout_gravity="right||center"
-                android:background="@drawable/logo_er"
+                android:layout_gravity="end"
+                android:background="@drawable/logo_er"/>
 
 
         </androidx.cardview.widget.CardView>
