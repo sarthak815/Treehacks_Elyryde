@@ -100,12 +100,7 @@
             android:orientation="vertical"
             android:gravity="top"
             android:layout_weight="2">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="top">
+
 
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -119,39 +114,26 @@
                     android:textSize="24sp"
                     android:background="@drawable/button_border"/>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:gravity="top">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"/>
 
-                <com.google.android.gms.common.SignInButton
-                    android:id="@+id/googlebtn"
-                    android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="30dp"
-                    android:text="GLogin"
-                    android:textColor="#FFFF"
-                    android:textSize="24dp" />
 
-                <Space
-                    android:layout_width="40dp"
-                    android:layout_height="0dp"/>
+
+
+
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/registerbtn"
-                    android:layout_width="150dp"
+                    android:layout_width="322dp"
                     android:layout_height="69dp"
-                    android:layout_gravity="end"
+                    android:layout_gravity="center"
                     android:background="@drawable/button_border"
                     android:fontFamily="@font/roboto"
-                    android:text="Sign Up"
+                    android:text="Don't have an account SIGN UP"
                     android:textColor="#FFFF"
-                    android:textSize="24sp" />
-            </LinearLayout>
+                    android:textSize="15sp" />
+
 
         </LinearLayout>
 
