@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "561401958965",
-    "project_id": "maps-framework-304707",
-    "storage_bucket": "maps-framework-304707.appspot.com"
+    "project_number": "749227894456",
+    "project_id": "elyryde-final",
+    "storage_bucket": "elyryde-final.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:561401958965:android:d7e01ba4351aaabaffd77c",
+        "mobilesdk_app_id": "1:749227894456:android:8cc8ee5c9a23c24b42364d",
         "android_client_info": {
           "package_name": "com.example.elyryde"
         }
       },
       "oauth_client": [
         {
-          "client_id": "561401958965-f861beij2re83vbfpm2vi0ebr4nr8gt6.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.elyryde",
-            "certificate_hash": "ad17775d1e17888660ced344554116a2b6d4ca2d"
-          }
-        },
-        {
-          "client_id": "561401958965-9tbh3q4abls7trh7a28j9q17m4sibmjm.apps.googleusercontent.com",
+          "client_id": "749227894456-in20duf5mmaea82lg7v82ip0gf4ubt62.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBw7ds1n8LcbMY4iiM8GdIaXVKvcaggb2M"
+          "current_key": "AIzaSyBCEVGG_6zHIOuCtGuHOKaIkxM_6uODyjs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "561401958965-9tbh3q4abls7trh7a28j9q17m4sibmjm.apps.googleusercontent.com",
+              "client_id": "749227894456-in20duf5mmaea82lg7v82ip0gf4ubt62.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
