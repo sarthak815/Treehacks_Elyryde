@@ -1,12 +1,14 @@
 # Treehacks_Elyryde
 
-![Youtube-Video](/Images/youtube_video.png)
+![Youtube-Video](/Images/youtube_video.PNG)
 
 ## Inspiration
 
 Many of us tech enthusiasts have always been interested in owning an electric vehicle, however in my case like in India you can go 100s of miles without seeing a single charging point once you leave the big cities. In my case my dad was not ready to buy an electric car as its not even possible to travel from my home which is Bangalore to Manipal(Location of my University) as there aren't enough charging points on the way to make it. This gave me the idea for this project so that everyone in the future will be able to own an electric vehicle.
 
 ## What it does
+
+![app](/Images/app.PNG)
 
 Our application Elyryde allows owners of electric vehicles to find charging points on the way to their destination by using the map on the application. It also allows owners of electric vehicle charging points to list their charging point to generate revenue when the charging point is not being used.
 
