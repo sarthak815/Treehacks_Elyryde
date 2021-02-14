@@ -1,6 +1,6 @@
 # Treehacks_Elyryde
 
-![Youtube-Video](https://ibb.co/qJTSPMP)
+![Youtube-Video](/Images/youtube_video.png)
 
 ## Inspiration
 
